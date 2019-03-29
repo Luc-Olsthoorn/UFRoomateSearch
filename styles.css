@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    ;
+}
+
+.navbar {
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    background-color: #285797;
+    border-bottom: 4px solid #e0812e;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
