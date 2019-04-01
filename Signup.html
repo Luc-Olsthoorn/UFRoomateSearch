@@ -1,0 +1,174 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>	
+	 <nav>
+	    <div class="nav-wrapper">
+	      <div class="col s12">
+	        <a href="#!" id="nav0"  class="breadcrumb">Basic Information</a>
+	        <a href="#!" id="nav1" style=" display:none;"class="breadcrumb">Life Style</a>
+	        <a href="#!" id="nav2" style=" display:none;"class="breadcrumb">Hobbies</a>
+	        <a href="#!" id="nav3" style=" display:none;"class="breadcrumb">Dorm Preferences</a>
+	        <a href="#!" id="nav4" style=" display:none;"class="breadcrumb">Finishing up</a>
+	      </div>
+	    </div>
+	  </nav>
+
+	  <div style=" text-align: center; padding-left: 200px; padding-right: 200px; padding-top:50px;">
+		  <div id="BasicInformation">
+		  	
+		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:400px"> <!-- notice the "circle" class -->
+		  	<div class="row">
+			    <form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s6">
+			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+			          <label for="first_name">Phone</label>
+			        </div>
+			      </div>
+			      <div class="row">
+			        <div class="input-field col s6">
+			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+			          <label for="first_name">Email</label>
+			        </div>
+			      </div>
+			     </form>
+			 </div>
+			<a class="waves-effect waves-light btn" onclick="newIndex(1)">Next</a>
+			</div>
+	
+			<div id="LifeStyle" style="display: none">
+		  	
+			  	<div class="row">
+			  		Party Level
+				      <form action="#">
+				          <p class="range-field">
+				            <input type="range" id="test5" min="0" max="100" />
+				          </p>
+				        </form>
+				    Working on Homework
+				      <form action="#">
+				          <p class="range-field">
+				            <input type="range" id="test5" min="0" max="100" />
+				          </p>
+				        </form>
+				    Cooking ability
+				      <form action="#">
+				          <p class="range-field">
+				            <input type="range" id="test5" min="0" max="100" />
+				          </p>
+				        </form>
+				 
+				 </div>
+				<a class="waves-effect waves-light btn" onclick="newIndex(2)">Next</a>
+			</div>
+			<div id="Hobbies" style="display: none">
+		  	
+			  	<div class="row">
+			  		Hobbies
+				      <div class="chips"></div>
+
+				 
+				 </div>
+				<a class="waves-effect waves-light btn" onclick="newIndex(3)">Next</a>
+			</div>
+			<div id="DormPreferences" style="display: none">
+		  	
+			  	<div class="input-field col s12">
+			  	    <select>
+			  	      <option value="" disabled selected>Preffered Dorm 1</option>
+			  	      <option value="1">Beaty</option>
+			  	      <option value="2">Hume</option>
+			  	      <option value="3">Rawlings</option>
+			  	    </select>
+			  	    <label>Preffered Dorm</label>
+			  	  </div>
+			  	  <div class="input-field col s12">
+			  	    <select>
+			  	      <option value="" disabled selected>Preffered Dorm 2</option>
+			  	      <option value="1">Beaty</option>
+			  	      <option value="2">Hume</option>
+			  	      <option value="3">Rawlings</option>
+			  	    </select>
+			  	    <label>Preffered Dorm</label>
+			  	  </div>
+			  	  <div class="input-field col s12">
+			  	    <select>
+			  	      <option value="" disabled selected>Number of roomates</option>
+			  	      <option value="1">1</option>
+			  	      <option value="2">2</option>
+			  	      <option value="3">3</option>
+			  	      <option value="4">4</option>
+			  	    </select>
+			  	    <label># of roomates</label>
+			  	  </div>
+				<a class="waves-effect waves-light btn" onclick="newIndex(4)">Next</a>
+			</div>
+			<div id="Finishing" style="display: none">
+		  		Preffered form of communicaiton
+			  	<form action="#">
+			  	    <p>
+			  	      <label>
+			  	        <input name="group1" type="radio" checked />
+			  	        <span>Text</span>
+			  	      </label>
+			  	    </p>
+			  	    <p>
+			  	      <label>
+			  	        <input name="group1" type="radio" />
+			  	        <span>Email</span>
+			  	      </label>
+			  	    </p>
+			  	    <p>
+			  	      <label>
+			  	        <input class="with-gap" name="group1" type="radio"  />
+			  	        <span>Email and text</span>
+			  	      </label>
+			  	    </p>
+			  	  </form>
+				<a class="waves-effect waves-light btn" href="./index.html">Next</a>
+			</div>
+		</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.chips');
+    var instances = M.Chips.init(elems, []);
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, []);
+  	});
+	let navArray = [
+		"BasicInformation",
+		"LifeStyle",
+		"Hobbies",
+		"DormPreferences",
+		"Finishing"
+	];
+	let index = 0;
+	const newIndex = (inputIndex)=>{
+		index = inputIndex;
+		console.log(index);
+		navArray.forEach((element, key)=>{
+			if(key == index){
+				$('#'+element).css("display","");
+			}else{
+				$('#'+element).css("display","none");
+			}
+			if(key <= index){
+
+				$('#nav'+ key).css("display","");
+			}else{
+				$('#nav'+ key).css("display","none");
+			}
+		})
+	};
+</script>
+
