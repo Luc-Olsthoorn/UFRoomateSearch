@@ -6,7 +6,16 @@
   height: 100%;
   width: 319px;
   background-color: white;
-  display: block;
+  float: left;
+}
+
+#body {
+  position: relative; /* necessary? */
+  background-color: #f1f1f1;
+  top: 64px;
+  height: 100%;
+  width: calc(100% - 319px);
+  float: right;
 }
 
 
@@ -25,4 +34,24 @@
   padding: 5px;
   font-size: 1.2em;
   width: 120px;
+}
+
+
+
+.sidebar-header {
+  color: white;
+  background-color: #285797;
+  font-weight: 550;
+  font-size: 20px;
+  border-bottom-color: rgb(164,170,188);
+
+}
+
+.sidebar-menu {
+  border: none;
+  margin: 0px;
+}
+
+.sidebar-body {
+  background-color: #e0e0e0;
 }

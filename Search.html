@@ -2,17 +2,12 @@
 
     <head>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link type="text/css" rel="stylesheet" href="CSS/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+      <link rel="stylesheet" type="text/css" href="CSS/search.css">
 
-        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-        <link rel="stylesheet" type="text/css" href="CSS/search.css">
-        <script src="JS/func.js"></script>
-        <script src="JS/search.js"></script>
 
-        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
     </head>
 
@@ -27,28 +22,64 @@
 
         <div id="sidebar">
 
-          <!-- JQUERY UI SORTABLE -->
+          <ul class="collapsible expandable sidebar-menu">
+            <li class="active">
+              <div class="collapsible-header sidebar-header">Prioritize</div>
+              <div class="collapsible-body sidebar-body">
 
-          <ul id="priorities" class="droptrue">
+
+
+                <span>Lorem ipsum dolor sit amet.</span>
+
+
+
+              </div>
+            </li>
+            <li class="active">
+              <div class="collapsible-header sidebar-header">No Preference</div>
+              <div class="collapsible-body sidebar-body">
+
+
+                <span>Lorem ipsum dolor sit amet.</span>
+
+
+              </div>
+            </li>
+          </ul>
+
+
+          <!-- JQUERY UI SORTABLE -->
+          <!-- <ul id="priorities" class="droptrue">
             <li class="priority">Item 1</li>
             <li class="priority">Item 2</li>
             <li class="priority">Item 3</li>
             <li class="priority">Item 4</li>
             <li class="priority">Item 5</li>
           </ul>
-
           <ul id="nopreference" class="droptrue">
           </ul>
+          <br style="clear:both"> -->
 
-          <br style="clear:both">
 
         </div>
 
-        
+
 
         <div id="body">
 
+
         </div>
+
+
+
+
+        <script type="text/javascript" src="JS/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="JS/func.js"></script>
+        <script src="JS/search.js"></script>
+
 
 
     </body>

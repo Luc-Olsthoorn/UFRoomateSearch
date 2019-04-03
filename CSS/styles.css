@@ -13,6 +13,7 @@ body {
     width: 100%;
     background-color: #285797;
     border-bottom: 4px solid #e0812e;
+    z-index: 1000;
 }
 
 a,
