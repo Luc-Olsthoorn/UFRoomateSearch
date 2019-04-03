@@ -11,6 +11,9 @@
         <script src="JS/func.js"></script>
         <script src="JS/search.js"></script>
 
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     </head>
 
     <body>
@@ -20,11 +23,28 @@
             <img src="IMG/user.png" onclick="toggleUser()" alt="UF Logo" style="position: fixed; top: 24px; right: 40px; cursor: pointer;"> <img id="uDrop" src="IMG/user-drop.png" style="position: fixed; top: 54px; right: 8px; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12); display: none;">
         </div>
 
-        
+
 
         <div id="sidebar">
 
+          <!-- JQUERY UI SORTABLE -->
+
+          <ul id="priorities" class="droptrue">
+            <li class="priority">Item 1</li>
+            <li class="priority">Item 2</li>
+            <li class="priority">Item 3</li>
+            <li class="priority">Item 4</li>
+            <li class="priority">Item 5</li>
+          </ul>
+
+          <ul id="nopreference" class="droptrue">
+          </ul>
+
+          <br style="clear:both">
+
         </div>
+
+        
 
         <div id="body">
 
