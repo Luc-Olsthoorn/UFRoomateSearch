@@ -22,3 +22,5 @@ document.addEventListener('DOMContentLoaded', function() {
     accordion: false
   });
 });
+
+$(".party-panel").css({'height':($(".profile-pic-panel").height()+20+'px')});
