@@ -2,26 +2,77 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<script src="JS/func.js"></script>
 
 </head>
+<style>
+#body{
+	position: relative;
+    background-color: #f1f1f1;
+    top: 64px;
+    width: calc(100% - 319px);
+    float: right;
+}
+</style>
 <body>	
-	 <nav>
-	    <div class="nav-wrapper">
+	<!-- NAVBAR -->
+        <div class="navbar">
+            
+            <!-- HEMBURGER MENU BUTTON -->
+            <img src="IMG/menu.png" onclick="toggleMenu()" alt="UF Logo" style="position: fixed; top: 27px; left: 24px; cursor: pointer;">
+            
+            <!-- UF LOGO -->
+            <a href="https://one.uf.edu/"><img src="IMG/logo-uf.svg" alt="UF Logo" style="position: fixed; height: 28px; top: 17.5px; left: 70px"></a>
+            
+            <!-- NAVBAR TEXT -->
+            <div style="position: fixed; top: 24px; left: 140px; color: white; font-family: sans-serif; font-weight: 600;"><a href="https://one.uf.edu/">ONE.UF</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="index.html">ROOMMATE SEARCH</a></div>
+            
+            <!-- USER MENU BUTTON -->
+            <img src="IMG/user.png" onclick="toggleUser()" alt="UF Logo" style="position: fixed; top: 24px; right: 40px; cursor: pointer;">
+            
+            <!-- USER MENU DROPDOWN -->
+            <img id="uDrop" src="IMG/user-drop.png" style="position: fixed; top: 54px; right: 8px; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12); display: none;">
+        </div>
+        
+        <div id="sidebar" style="position: fixed; top: 70px; left: 0px; border-right: 1px solid rgba(0, 0, 0, 0.2); height: 100%; background-color: white; display: block;">
+            <img src="IMG/sidebar.png" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+        </div>
+	
+	 <div id="body">
+	  <nav>
+	    <div class="nav-wrapper" style="padding-left:20px">
 	      <div class="col s12">
-	        <a href="#!" id="nav0"  class="breadcrumb">Basic Information</a>
-	        <a href="#!" id="nav1" style=" display:none;"class="breadcrumb">Life Style</a>
-	        <a href="#!" id="nav2" style=" display:none;"class="breadcrumb">Hobbies</a>
-	        <a href="#!" id="nav3" style=" display:none;"class="breadcrumb">Dorm Preferences</a>
-	        <a href="#!" id="nav4" style=" display:none;"class="breadcrumb">Finishing up</a>
+	        <a onclick="newIndex(0)" id="nav0" style=" display:none;class="breadcrumb">Basic Information</a>
+	        <a onclick="newIndex(1)" href="#!" id="nav1" style=" display:none;"class="breadcrumb">Life Style</a>
+	        <a onclick="newIndex(2)" href="#!" id="nav2" style=" display:none;"class="breadcrumb">Hobbies</a>
+	        <a onclick="newIndex(3)" href="#!" id="nav3" style=" display:none;"class="breadcrumb">Dorm Preferences</a>
+	        <a onclick="newIndex(4)" href="#!" id="nav4" style=" display:none;"class="breadcrumb">Finishing up</a>
 	      </div>
 	    </div>
 	  </nav>
 
 	  <div style=" text-align: center; padding-left: 200px; padding-right: 200px; padding-top:50px;">
-		  <div id="BasicInformation">
+
+	  		<div id="Welcome">
+			  	<div class="row">
+
+			      Welcome
+			    </div>
+			      <div class="row">
+			        This is the Roomate searcher, that helps you find a roomate within UF. 
+			      </div>
+			      <div class="row">
+			        To get started, lets get to know you
+			      </div>
+			      <div class="row">
+			       Note: This data is not shared with UF, so answer as openly as possible!
+			      </div>
+			<a class="waves-effect waves-light btn" onclick="newIndex(0)">Begin</a>
+			</div>
+		  <div id="BasicInformation" style="display: none">
 		  	
-		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:400px"> <!-- notice the "circle" class -->
+		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:300px"> <!-- notice the "circle" class -->
 		  	<div class="row">
 			    <form class="col s12">
 			      <div class="row">
@@ -133,6 +184,7 @@
 				<a class="waves-effect waves-light btn" href="./index.html">Next</a>
 			</div>
 		</div>
+	</div>
 
 
 </body>
@@ -154,6 +206,7 @@
 	];
 	let index = 0;
 	const newIndex = (inputIndex)=>{
+		$('#'+ "Welcome").css("display","none");
 		index = inputIndex;
 		console.log(index);
 		navArray.forEach((element, key)=>{
