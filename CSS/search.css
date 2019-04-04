@@ -91,13 +91,25 @@
 }
 
 .party-panel {
-  width: 95%;
-  /* height: 90%; */
   background-color: white;
   max-width: 100%;
 }
 
 .party-table {
-  height: 245px;
   text-align: center;
+}
+
+.match-panel {
+  background-color: white;
+  margin-right: 10px;
+
+}
+
+.info-panel {
+  background-color: white;
+
+}
+
+.info-table {
+  height: 100%;
 }

@@ -22,3 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     accordion: false
   });
 });
+
+$(".party-panel").css({'height':($(".profile-pic-panel").height()+20+'px')});
+$(".match-panel").css({'height':($(".profile-pic-panel").height()+20+'px')});
+$(".info-panel").css({'height':($(".profile-pic-panel").height()+20+'px')});
