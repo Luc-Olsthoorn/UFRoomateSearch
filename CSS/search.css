@@ -25,7 +25,7 @@
   background: #e0e0e0;
   padding: 0px;
   width: 100%;
-  min-height: 100px;
+  min-height: 200px;
 }
 
 .priority {
@@ -40,6 +40,18 @@
   border-radius: 5px;
   border: 1px solid rgb(204,204,204);
   font-size: 16px;
+}
+
+.dashed-circle {
+  height: 50px;
+  width: 50px;
+  margin-top: 7px;
+  margin-right: 0px;
+  margin-left: 15px;
+  background-color: rgb(40,87,151);
+  border: 2px dashed white;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 
@@ -74,7 +86,22 @@
   float: left;
 }
 
+.inner-navbar {
+  margin-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.results-info {
+  margin-top: 2em;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  margin-bottom: 3em;
+  color: gray;
+}
+
 .roommate-panel {
+  margin-top: 1.5em;
   margin-left: 1em;
   margin-right: 1em;
   background-color: rgb(221,221,221);
@@ -107,9 +134,110 @@
 
 .info-panel {
   background-color: white;
+  position: relative;
 
 }
 
-.info-table {
-  height: 100%;
+.desc-table {
+  height: 35%;
+  background-color: white;
+}
+
+.hobby-table {
+  height: 25%;
+  background-color: white;
+  border-top: 0.75em solid rgb(221,221,221);
+  border-bottom: 0.75em solid rgb(221,221,221);
+  z-index: 100;
+}
+
+.details-table {
+  height: 40%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.desc {
+  font-size: 100%;
+  font-weight: 500;
+  line-height: 190%;
+  padding-left: 1em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.hobby {
+  font-size: 100%;
+  line-height: 190%;
+  padding-left: 1em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.detail {
+  font-size: 100%;
+  line-height: 190%;
+  padding-left: 0.5em;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.checkmark {
+  vertical-align:middle;
+  margin-top: auto;
+  margin-bottom: 4px;
+  color: green;
+}
+
+.xmark {
+  vertical-align:middle;
+  margin-top: auto;
+  margin-bottom: 4px;
+  color: red;
+}
+
+.match {
+  font-weight: 500;
+  color: green;
+
+}
+
+.percentage {
+  font-size: 4em;
+}
+
+.percentsign {
+  font-size: 1em !important;
+}
+
+.mybutton {
+  width: 75%;
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: white !important;
+  padding-left: 13px;
+  padding-right: 10px;
+  background-color: rgb(40,87,151);
+}
+
+.mybutton:hover {
+  background-color: rgb(31,66,114);
+}
+
+.mybuttonicon {
+  margin-right: 5px !important;
+}
+
+.name-panel {
+  font-weight: 550;
+  font-size: 1.2em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 1em;
+}
+
+.mynav {
+  background-color: rgb(40,87,151);
 }

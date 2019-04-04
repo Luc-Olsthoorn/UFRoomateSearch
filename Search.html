@@ -29,12 +29,11 @@
               <div class="collapsible-body sidebar-body">
 
                   <ul id="priorities" class="droptrue">
-                      <li class="priority"><span class="priority-label">Item 1</span><i class="material-icons priority-handle">more_vert</i></li>
-                      <li class="priority"><span class="priority-label">Item 2</span><i class="material-icons priority-handle">more_vert</i></li>
-                      <li class="priority"><span class="priority-label">Item 3</span><i class="material-icons priority-handle">more_vert</i></li>
-                      <li class="priority"><span class="priority-label">Item 4</span><i class="material-icons priority-handle">more_vert</i></li>
-                      <li class="priority"><span class="priority-label">Item 5</span><i class="material-icons priority-handle">more_vert</i></li>
-                      <li class="priority"><span class="priority-label">Item 6</span><i class="material-icons priority-handle">more_vert</i></li>
+                      <li class="priority"><span class="priority-label">Sleep schedule</span><i class="material-icons priority-handle">more_vert</i></li>
+                      <li class="priority"><span class="priority-label">Hobbies</span><i class="material-icons priority-handle">more_vert</i></li>
+                      <li class="priority"><span class="priority-label">Major</span><i class="material-icons priority-handle">more_vert</i></li>
+                      <li class="priority"><span class="priority-label">Work Ethic</span><i class="material-icons priority-handle">more_vert</i></li>
+                      <li class="priority"><span class="priority-label">Party Level</span><i class="material-icons priority-handle">more_vert</i></li>
                   </ul>
 
               </div>
@@ -56,93 +55,130 @@
 
         <div id="body">
 
-          <div class="roommate-panel">
+          <div class="inner-navbar">
 
-            <table class="roommate-table">
-              <tr>
-                <td class="tg-0lax" colspan="4"> <strong>Andrew Kuczynski</strong> </td>
-              </tr>
-              <tr>
-                <td style="width: 18%; text-align: center;"> <div class="profile-pic-panel">
-                  <img src="IMG/users/Andrew.png" class="img-fluid" alt="" />
-                </div> </td>
-                <td style="width: 15%; text-align: center;">
-                    <div class="party-panel">
-                      <table class="party-table" style="border: none">
-                        <tr style="border: none; height: 18%">
-                          <td style="padding-top:10%; padding-bottom:8%; text-align:center; font-size:90%; font-weight:500;">Current Party</td>
-                        </tr>
-                        <!-- PARTY MEMBER 1 -->
-                        <tr style="border: none;">
-                          <td style="padding-top:5%; padding-bottom:5%; text-align:center; font-size: 90%;">
-                            <div style="font-weight: 600; width:30%; margin:0; display:inline-block;"><img src="IMG/users/Kent.png" class="img-fluid" style="border-radius: 50%;" alt=""></div>&nbsp;&nbsp;88% Match
-                          </td>
-                        </tr>
-                        <!-- PARTY MEMBER 2 -->
-                        <tr style="border: none;">
-                          <td style="padding-top:5%; padding-bottom:5%; text-align:center; font-size: 90%;">
-                            <div style="font-weight: 600; width:30%; margin:0; display:inline-block;"><img src="IMG/users/Albert.png" class="img-fluid" style="border-radius: 50%;" alt=""></div>&nbsp;&nbsp;73% Match
-                          </td>
-                        </tr>
-                        <!-- PARTY MEMBER 3 -->
-                        <tr style="border: none">
-                          <td></td>
-                        </tr>
-                      </table>
-                    </div>
-                </td>
-
-              <!-- INFO PANEL -->
-              <td style="text-align: center;">
-                <div class="info-panel">
-                  <table class="info-table">
-                    <tr>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                    </tr>
-                  </table>
-
-                </div>
+            <nav class="mynav">
+              <div class="nav-wrapper">
+                <form style="width: 50%; display: inline-block;">
+                  <div class="input-field" style="margin-left: 2em;">
+                    <input id="search" type="search" placeholder="Search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
 
 
-              </td>
 
+                <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 20px;">
+                  <li>Current Party</li>
+                  <li> <img src="IMG/users/George.png" height="50" alt="" style="margin-left: 20px; border-radius: 50%;"> </li>
+                  <li><span class="dashed-circle"></span></li>
+                  <li><span class="dashed-circle"></span></li>
+                  <li><span class="dashed-circle"></span></li>
+                </ul>
 
-              <!-- MATCH PANEL -->
-              <td style="width: 16%; text-align: center;">
-                <div class="match-panel">
-
-
-                </div>
-              </td>
-              </tr>
-            </table>
-
+              </div>
+            </nav>
 
           </div>
 
 
+          <div id="searchResults"></div>
 
 
 
+          <!-- because of some JS fuckery I couldn't figure out, this template version of a roommate is below but has display hidden -->
+          <!-- the following can be safely left alone and ignored -->
+          <div class="roommate-panel" style="display: none;">
+          <table class="roommate-table">
+            <tr>
+              <td class="name-panel" colspan="4"> Andrew Kuczynski </td>
+            </tr>
+            <tr>
+              <td style="width: 18%; text-align: center;"> <div class="profile-pic-panel">
+                <img src="IMG/users/Andrew.png" class="img-fluid" alt="" />
+              </div> </td>
+              <td style="width: 15%; text-align: center;">
+                  <div class="party-panel">
+                    <table class="party-table" style="border: none">
+                      <tr style="border: none; height: 18%">
+                        <td style="padding-top:10%; padding-bottom:8%; text-align:center; font-size:105%; font-weight:550;">Current Party</td>
+                      </tr>
+                      <!-- PARTY MEMBER 1 -->
+                      <tr style="border: none;">
+                        <td style="padding-top:5%; padding-bottom:5%; text-align:center; font-size: 90%;">
+                          <div style="font-weight: 600; width:30%; margin:0; display:inline-block;"><img src="IMG/users/Kent.png" class="img-fluid" style="border-radius: 50%;" alt=""></div>&nbsp;&nbsp;88% Match
+                        </td>
+                      </tr>
+                      <!-- PARTY MEMBER 2 -->
+                      <tr style="border: none;">
+                        <td style="padding-top:5%; padding-bottom:5%; text-align:center; font-size: 90%;">
+                          <div style="font-weight: 600; width:30%; margin:0; display:inline-block;"><img src="IMG/users/Albert.png" class="img-fluid" style="border-radius: 50%;" alt=""></div>&nbsp;&nbsp;73% Match
+                        </td>
+                      </tr>
+                      <!-- PARTY MEMBER 3 -->
+                      <tr style="border: none">
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+              </td>
+            <!-- INFO PANEL -->
+            <td style="text-align: center;">
+              <div class="info-panel">
+                <table class="desc-table">
+                  <tr style="border: none;">
+                    <td class="desc">
+                      Incoming Freshman - Computer Engineering <br>
+                      Coral Springs, FL
+                    </td>
+                  </tr>
+                </table>
+                <table class="hobby-table">
+                  <tr style="border: none;">
+                    <td class="hobby">
+                      <strong>Hobbies:</strong> Hockey, Video Games
+                    </td>
+                  </tr>
+                </table>
+                <table class="details-table">
+                  <tr style="border-bottom: 1px solid rgb(221,221,221);">
+                    <td class="detail">
+                      <i class="material-icons checkmark">check</i> Goes to between 12 - 1 AM
+                    </td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgb(221,221,221);">
+                    <td class="detail">
+                      <i class="material-icons checkmark">check</i> Likes to party occasionally
+                    </td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgb(221,221,221);">
+                    <td class="detail">
+                      <i class="material-icons xmark">close</i> Serious about school and getting work done
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+            <!-- MATCH PANEL -->
+            <td style="width: 16%; text-align: center;">
+              <div class="match-panel">
+                <div style="">
+                  <span class="percentage match">93</span><span class="percentsign match">%</span>
+                </div>
+                <div style="font-weight: 500; font-size: 1.5em; margin-bottom: 1em; margin-top: -0.25em">MATCH</div>
+                <a class="waves-effect waves-light btn mybutton"><i class="material-icons left mybuttonicon">local_phone</i>REQUEST CONTACT</a>
+                <a class="waves-effect waves-light btn mybutton"><i class="material-icons left mybuttonicon">group</i>INVITE TO PARTY</a>
+              </div>
+            </td>
+            </tr>
+          </table>
+        </div>
+        <!-- end of hidden template -->
 
-
-
-
-
-
-          <!-- <div id="searchResults"></div> -->
+        <div class="results-info">
+          Showing 1-3 of 3 results
+        </div>
 
         </div> <!-- BODY -->
 
