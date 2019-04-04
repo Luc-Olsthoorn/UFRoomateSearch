@@ -1,0 +1,52 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="CSS/party.css">
+        <script src="JS/func.js"></script>
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <!-- HEMBURGER MENU BUTTON -->
+            <img src="IMG/menu.png" onclick="toggleMenu()" alt="UF Logo" style="position: fixed; top: 27px; left: 24px; cursor: pointer;">
+            <!-- UF LOGO -->
+            <a href="https://one.uf.edu/"><img src="IMG/logo-uf.svg" alt="UF Logo" style="position: fixed; height: 28px; top: 17.5px; left: 70px"></a>
+            <!-- NAVBAR TEXT -->
+            <div style="position: fixed; top: 24px; left: 140px; color: white; font-family: sans-serif; font-weight: 600;"><a href="https://one.uf.edu/">ONE.UF</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="index.html">ROOMMATE SEARCH</a></div>
+            <!-- USER MENU BUTTON -->
+            <img src="IMG/user.png" onclick="toggleUser()" alt="UF Logo" style="position: fixed; top: 24px; right: 40px; cursor: pointer;">
+            <!-- USER MENU DROPDOWN -->
+            <img id="uDrop" src="IMG/user-drop.png" style="position: fixed; top: 54px; right: 8px; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12); display: none;">
+        </div>
+        <!-- SIDEBAR -->
+        <div id="sidebar" style="position: fixed; top: 70px; left: 0px; border-right: 1px solid rgba(0, 0, 0, 0.2); height: 100%; background-color: white; display: block;">
+            <img src="IMG/sidebar.png" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
+        </div>
+
+        <div id="body">
+          <div class="panel" id="myParty">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
+            pulvinar, at pulvinar felis blandit. <p>HELLO WORLD!</p>
+            Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+          </div>
+
+          <div class="panel" id="dormSelection">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
+            pulvinar, at pulvinar felis blandit. <p>HELLO WORLD!</p>
+            Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+          </div>
+        </div>
+
+        <!--
+        <div style="display:block; margin-left: 300px; margin-top: 300px;width:100%;height:100%;background:#FF0000;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
+          pulvinar, at pulvinar felis blandit. <p>HELLO WORLD!</p>
+          Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+          </div>
+-->
+    </body>
+
+</html>
