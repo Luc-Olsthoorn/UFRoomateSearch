@@ -146,14 +146,14 @@ let generateSearchResults = (callback)=>{
 				                </div>
 				              </td>
 				              <!-- MATCH PANEL -->
-				              <td style="width: 16%; text-align: center;">
+				              <td style="width: 22%; text-align: center;">
 				                <div class="match-panel">
 				                  <div style="">
 				                    <span class="percentage match">${element.match}</span><span class="percentsign match">%</span>
 				                  </div>
-				                  <div style="font-weight: 500; font-size: 1.5em; margin-bottom: 1em; margin-top: -0.25em">MATCH</div>
-				                  <a class="waves-effect waves-light btn mybutton"><i class="material-icons left mybuttonicon">local_phone</i>REQUEST CONTACT</a>
-				                  <a class="waves-effect waves-light btn mybutton"><i class="material-icons left mybuttonicon">group</i>INVITE TO PARTY</a>
+				                  <div style="font-weight: 500; font-size: 1em; margin-bottom: 0.25em; margin-top: -0.25em">MATCH</div>
+				                  <a class="waves-effect waves-light btn-small mybutton"><i class="material-icons left mybuttonicon">local_phone</i>REQ CONTACT</a>
+				                  <a class="waves-effect waves-light btn-small mybutton"><i class="material-icons left mybuttonicon">group</i>INV TO PARTY</a>
 				                </div>
 				              </td>
 				              </tr>

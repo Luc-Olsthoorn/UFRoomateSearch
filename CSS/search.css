@@ -146,8 +146,8 @@
 .hobby-table {
   height: 25%;
   background-color: white;
-  border-top: 0.75em solid rgb(221,221,221);
-  border-bottom: 0.75em solid rgb(221,221,221);
+  border-top: 0.5em solid rgb(221,221,221);
+  border-bottom: 0.5em solid rgb(221,221,221);
   z-index: 100;
 }
 
@@ -159,25 +159,23 @@
 }
 
 .desc {
-  font-size: 100%;
+  font-size: 0.7em;
   font-weight: 500;
-  line-height: 190%;
+  /* line-height: 190%; */
   padding-left: 1em;
   padding-bottom: 0;
   padding-top: 0;
 }
 
 .hobby {
-  font-size: 100%;
-  line-height: 190%;
+  font-size: 12px;
   padding-left: 1em;
   padding-bottom: 0;
   padding-top: 0;
 }
 
 .detail {
-  font-size: 100%;
-  line-height: 190%;
+  font-size: 12px;
   padding-left: 0.5em;
   padding-bottom: 0;
   padding-top: 0;
@@ -188,6 +186,7 @@
   margin-top: auto;
   margin-bottom: 4px;
   color: green;
+  font-size: inherit !important;
 }
 
 .xmark {
@@ -195,6 +194,7 @@
   margin-top: auto;
   margin-bottom: 4px;
   color: red;
+  font-size: inherit !important;
 }
 
 .match {
@@ -204,17 +204,17 @@
 }
 
 .percentage {
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .percentsign {
-  font-size: 1em !important;
+  font-size: 0.8em !important;
 }
 
 .mybutton {
   width: 75%;
   margin-bottom: 1em;
-  font-size: 0.75em;
+  font-size: 0.7em;
   font-weight: 500;
   color: white !important;
   padding-left: 13px;
