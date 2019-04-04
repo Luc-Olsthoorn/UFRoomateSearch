@@ -45,7 +45,7 @@ let mainData = {
 			bed: "Goes to bed between 12 - 1 AM",
 			party: "Doesn't like to party",
 			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/Andrew.png",
+			profilepic: "IMG/users/Mark.png",
 			match: 79,
 			party: []
 		}
@@ -58,7 +58,16 @@ let mainData = {
 
 let generateSearchResults = ()=>{
 	let output = mainData["people"].map((element)=>{
-		return `<div>Name: ${element.name} Match: ${element.match}<div>`
+		return `
+		<div class="roommate">
+		<img src="${element.profilepic}" />
+			Name: ${element.name} <br> Match: ${element.match}
+
+
+
+
+		</div>
+		`
 	});
 	$("#searchResults").append(output);
 }

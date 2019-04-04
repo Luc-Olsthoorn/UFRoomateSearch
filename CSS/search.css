@@ -73,3 +73,10 @@
 .priority-label {
   float: left;
 }
+
+.roommate-panel {
+  margin-left: 1em;
+  margin-right: 1em;
+  background-color: rgb(221,221,221);
+  border: none;
+}
