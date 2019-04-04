@@ -98,3 +98,18 @@
 .party-table {
   text-align: center;
 }
+
+.match-panel {
+  background-color: white;
+  margin-right: 10px;
+
+}
+
+.info-panel {
+  background-color: white;
+
+}
+
+.info-table {
+  height: 100%;
+}
