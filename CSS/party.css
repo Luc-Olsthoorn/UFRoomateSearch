@@ -1,0 +1,26 @@
+.panel {
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 3px grey;
+}
+
+#body{
+  position: relative; /* necessary? */
+  background-color: #f1f1f1;
+  /*top: 64px;*/
+  top: 67px;
+  height: 100%;
+  width: calc(100% - 319px);
+  float: right;
+}
+
+#myParty {
+  float: left;
+  width:45%;
+  margin: 3% 0% 3% 3%;
+}
+
+#dormSelection {
+  float: right;
+  width:45%;
+  margin: 3% 3% 3% 0%;"
+}
