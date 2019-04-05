@@ -7,7 +7,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="JS/func.js"></script>
-        <script src="JS/data.js"></script>
 
 
     </head>
@@ -37,20 +36,7 @@
             <table>
               <tr style="border-bottom: 0px;">
                 <!-- PARTY MEMBER 1 -->
-                <td class="party-member">
-                  <img class="party-pic" src="IMG/users/George.png">
-                </td>
-                <!-- PARTY MEMBER 2 -->
-                <td class="party-member add-member" style="cursor: pointer;"
-                  onclick="javascript:document.location.href = 'Search.html';">
-                  <img class="party-pic" src="IMG/users/add.png"></td>
-              </tr>
-              <tr style="border-bottom: 0px;">
-                <td class="member-name"> Alec Welp </td>
-                <td class="member-name add-member" style="cursor: pointer;"
-                  onclick="javascript:document.location.href = 'Search.html';">
-                  <b>+</b> Add members </td>
-              </tr>
+                <div id="currentParty"></div>
               <!--
               <tr style="border-bottom: 0px;">
                 <td class="party-member">
@@ -139,4 +125,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="JS/dorm-drop.js"></script>
 <script src="JS/data.js"></script>
+<script src="JS/partyPage.js"></script>
+
 </html>

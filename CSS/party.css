@@ -15,7 +15,6 @@
   height: calc(100% - 140px);
   width: calc(100% - 319px);
   min-height: 500px;
-    min-width: 1200px;
     left: 320px;
 }
 
@@ -38,13 +37,15 @@
 }
 
 .party-member {
-  padding: 2% 0%;
+  padding-left: 20px;
+  padding-right: 20px;
+
   text-align: center;
   border-bottom: 0px;
 }
 
 .party-pic {
-  height: 80%;
+  width:100px;
   border-radius: 50%;
 }
 
