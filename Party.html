@@ -7,7 +7,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script src="JS/func.js"></script>
-        
+
 
     </head>
 
@@ -59,13 +59,19 @@
                   <img class="party-pic" src="IMG/users/George.png">
                 </td>
               </tr>
-              -->
+              <tr style="border-bottom: 0px;">
+                <td class="member-name"> Alec Welp </td>
+                <td class="member-name"> Alec Welp </td>
+              </tr>
+            -->
+
             </table>
           </div>
 
+          <!-- Area dropdown -->
           <div class="panel dormSelection">
             <h1 class="panel-heading">Dorm Selection</h1>
-            <div class="input-field col s12">
+            <div class="input-field col s12 dormContents">
               <select id="area">
                 <option value="" disabled selected>Area</option>
                 <option value="beaty">Beaty Area</option>
@@ -82,12 +88,52 @@
                 <option value="yulee">Yulee Area</option>
               </select>
             </div>
-            <div id="building">
-            <p id="demo"></p>
+
+            <!-- Building dropdown -->
+            <div id="building" class="input-field col s12 dormContents">
+              <select disabled>
+                <option value="">Building</option>
+              </select>
+            </div>
+
+            <!-- Room Table -->
+            <div class="dormContents">
+              <table id="room" class="highlight centered room-select">
+                <thead>
+                  <tr>
+                    <th>Room Size</th>
+                    <th>Type</th>
+                    <th>Floor</th>
+                    <th>Number Available</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2</td>
+                    <td>Traditional</td>
+                    <td>3</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Traditional</td>
+                    <td>3</td>
+                    <td>25</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+            <div class="submit">
+              <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action"
+              style="position: absolute; right: 0; bottom: 0;">Lock - in
+              </button>
+            </div>
 
           </div>
         </div>
-    
+
     </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="JS/dorm-drop.js"></script>

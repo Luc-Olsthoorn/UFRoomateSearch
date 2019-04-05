@@ -15,30 +15,30 @@
     left: 320px;
 }
 </style>
-<body>	
+<body>
 	<!-- NAVBAR -->
         <div class="navbar">
-            
+
             <!-- HEMBURGER MENU BUTTON -->
             <img src="IMG/menu.png" onclick="toggleMenu()" alt="UF Logo" style="position: fixed; top: 27px; left: 24px; cursor: pointer;">
-            
+
             <!-- UF LOGO -->
             <a href="https://one.uf.edu/"><img src="IMG/logo-uf.svg" alt="UF Logo" style="position: fixed; height: 28px; top: 17.5px; left: 70px"></a>
-            
+
             <!-- NAVBAR TEXT -->
             <div style="position: fixed; top: 24px; left: 140px; color: white; font-family: sans-serif; font-weight: 600;"><a href="https://one.uf.edu/">ONE.UF</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onclick="newIndex(0)" style="cursor: pointer;">ROOMMATE SEARCH</a></div>
-            
+
             <!-- USER MENU BUTTON -->
             <img src="IMG/user.png" onclick="toggleUser()" alt="UF Logo" style="position: fixed; top: 24px; right: 40px; cursor: pointer;">
-            
+
             <!-- USER MENU DROPDOWN -->
             <img id="uDrop" src="IMG/user-drop.png" style="position: fixed; top: 54px; right: 8px; box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12); display: none;">
         </div>
-        
+
         <div id="sidebar" style="position: fixed; top: 70px; left: 0px; border-right: 1px solid rgba(0, 0, 0, 0.2); height: 100%; background-color: white; display: block;">
             <img src="IMG/sidebar.png" style="border-bottom: 1px solid rgba(0, 0, 0, 0.2);">
         </div>
-	
+
 	 <div id="body">
 	  <nav>
 	    <div class="nav-wrapper" style="padding-left:20px">
@@ -60,7 +60,7 @@
 			      Welcome
 			    </div>
 			      <div class="row">
-			        This is the Roomate searcher, that helps you find a roomate within UF. 
+			        This is the Roomate searcher, that helps you find a roomate within UF.
 			      </div>
 			      <div class="row">
 			        To get started, lets get to know you
@@ -68,10 +68,10 @@
 			      <div class="row">
 			       Note: This data is not shared with UF, so answer as openly as possible!
 			      </div>
-			<a class="waves-effect waves-light btn" onclick="newIndex(0)">Begin</a>
+			<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(0)">Begin</a>
 			</div>
 		  <div id="BasicInformation" style="display: none;">
-		  	
+
 		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:300px"> <!-- notice the "circle" class -->
 		  	<div class="row">
 			    <form class="col s12" style="margin-left: 24%;">
@@ -89,11 +89,11 @@
 			      </div>
 			     </form>
 			 </div>
-			<a class="waves-effect waves-light btn" onclick="newIndex(1)">Next</a>
+			<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(1)">Next</a>
 			</div>
-	
+
 			<div id="LifeStyle" style="display: none">
-		  	
+
 			  	<div class="row">
 			  		<b>Party Level</b>
 			  	</div>
@@ -131,10 +131,10 @@
 				    <div style="display:inline-block; width:15%">Emulsify the garlic</div>
 				</div>
 
-				<a class="waves-effect waves-light btn" onclick="newIndex(2)">Next</a>
+				<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(2)">Next</a>
 			</div>
 			<div id="Hobbies" style="display: none; padding: 0px 20%;">
-		  	
+
 			  	<div class="row">
 			  		<b>Hobbies</b>
 			  	</div>
@@ -142,12 +142,12 @@
 			  		List out all of your hobbies!
 				      <div class="chips"></div>
 
-				 
+
 				 </div>
-				<a class="waves-effect waves-light btn" onclick="newIndex(3)">Next</a>
+				<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(3)">Next</a>
 			</div>
 			<div id="DormPreferences" style="display: none; padding: 0px 20%;">
-		  	
+
 			  	<div class="input-field col s12">
 			  	    <select>
 			  	      <option value="1">Beaty</option>
@@ -205,7 +205,7 @@
 			  	    </select>
 			  	    <label># of roomates</label>
 			  	  </div>
-				<a class="waves-effect waves-light btn" onclick="newIndex(4)">Next</a>
+				<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(4)">Next</a>
 			</div>
 			<div id="Finishing" style="display: none">
 		  		Preffered form of communicaiton
@@ -229,7 +229,7 @@
 			  	      </label>
 			  	    </p>
 			  	  </form>
-				<a class="waves-effect waves-light btn" href="./Party.html">Finish</a>
+				<a class="waves-effect waves-light btn light-blue darken-4" href="./Party.html">Finish</a>
 			</div>
 		</div>
 	</div>
@@ -238,7 +238,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-	
+
 	document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.chips');
     var instances = M.Chips.init(elems, []);
@@ -272,4 +272,3 @@
 		})
 	};
 </script>
-
