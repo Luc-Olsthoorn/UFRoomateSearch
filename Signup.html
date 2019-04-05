@@ -8,11 +8,11 @@
 </head>
 <style>
 #body{
-	position: relative;
+	position: absolute;
     background-color: #f1f1f1;
     top: 64px;
     width: calc(100% - 319px);
-    float: right;
+    left: 320px;
 }
 </style>
 <body>	
@@ -26,7 +26,7 @@
             <a href="https://one.uf.edu/"><img src="IMG/logo-uf.svg" alt="UF Logo" style="position: fixed; height: 28px; top: 17.5px; left: 70px"></a>
             
             <!-- NAVBAR TEXT -->
-            <div style="position: fixed; top: 24px; left: 140px; color: white; font-family: sans-serif; font-weight: 600;"><a href="https://one.uf.edu/">ONE.UF</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="index.html">ROOMMATE SEARCH</a></div>
+            <div style="position: fixed; top: 24px; left: 140px; color: white; font-family: sans-serif; font-weight: 600;"><a href="https://one.uf.edu/">ONE.UF</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a onclick="newIndex(0)" style="cursor: pointer;">ROOMMATE SEARCH</a></div>
             
             <!-- USER MENU BUTTON -->
             <img src="IMG/user.png" onclick="toggleUser()" alt="UF Logo" style="position: fixed; top: 24px; right: 40px; cursor: pointer;">
@@ -43,7 +43,7 @@
 	  <nav>
 	    <div class="nav-wrapper" style="padding-left:20px">
 	      <div class="col s12">
-	        <a onclick="newIndex(0)" id="nav0" style=" display:none;class="breadcrumb">Basic Information</a>
+	        <a onclick="newIndex(0)" id="nav0" style="display:none; cursor: pointer;" class="breadcrumb">Basic Information</a>
 	        <a onclick="newIndex(1)" href="#!" id="nav1" style=" display:none;"class="breadcrumb">Life Style</a>
 	        <a onclick="newIndex(2)" href="#!" id="nav2" style=" display:none;"class="breadcrumb">Hobbies</a>
 	        <a onclick="newIndex(3)" href="#!" id="nav3" style=" display:none;"class="breadcrumb">Dorm Preferences</a>
@@ -52,7 +52,7 @@
 	    </div>
 	  </nav>
 
-	  <div style=" text-align: center; padding-left: 200px; padding-right: 200px; padding-top:50px;">
+	  <div style=" text-align: center; padding-left: 20px; padding-right: 20px; padding-top:50px;">
 
 	  		<div id="Welcome">
 			  	<div class="row">
@@ -70,11 +70,11 @@
 			      </div>
 			<a class="waves-effect waves-light btn" onclick="newIndex(0)">Begin</a>
 			</div>
-		  <div id="BasicInformation" style="display: none">
+		  <div id="BasicInformation" style="display: none;">
 		  	
 		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:300px"> <!-- notice the "circle" class -->
 		  	<div class="row">
-			    <form class="col s12">
+			    <form class="col s12" style="margin-left: 24%;">
 			      <div class="row">
 			        <div class="input-field col s6">
 			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
@@ -133,7 +133,7 @@
 
 				<a class="waves-effect waves-light btn" onclick="newIndex(2)">Next</a>
 			</div>
-			<div id="Hobbies" style="display: none">
+			<div id="Hobbies" style="display: none; padding: 0px 20%;">
 		  	
 			  	<div class="row">
 			  		<b>Hobbies</b>
@@ -146,7 +146,7 @@
 				 </div>
 				<a class="waves-effect waves-light btn" onclick="newIndex(3)">Next</a>
 			</div>
-			<div id="DormPreferences" style="display: none">
+			<div id="DormPreferences" style="display: none; padding: 0px 20%;">
 		  	
 			  	<div class="input-field col s12">
 			  	    <select>
@@ -229,7 +229,7 @@
 			  	      </label>
 			  	    </p>
 			  	  </form>
-				<a class="waves-effect waves-light btn" href="./index.html">Finish</a>
+				<a class="waves-effect waves-light btn" href="./Party.html">Finish</a>
 			</div>
 		</div>
 	</div>
