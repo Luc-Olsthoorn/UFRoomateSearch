@@ -229,7 +229,7 @@
 			  	      </label>
 			  	    </p>
 			  	  </form>
-				<a class="waves-effect waves-light btn light-blue darken-4" href="./Party.html">Finish</a>
+				<a class="waves-effect waves-light btn light-blue darken-4" onclick="storeData()">Finish</a>
 			</div>
 		</div>
 	</div>
@@ -253,6 +253,11 @@
 		"Finishing"
 	];
 	let index = 0;
+	const storeData = () =>{
+		sessionStorage.setItem('personal', {datastored:"YEET"});
+		javascript:document.location.href = './Party.html';
+		
+	}
 	const newIndex = (inputIndex)=>{
 		$('#'+ "Welcome").css("display","none");
 		index = inputIndex;
