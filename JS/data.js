@@ -42,6 +42,7 @@ const storeData = (data) =>{
 	sessionStorage.setItem('data', JSON.stringify(data));
 }
 //mainData represents pool of roommates to be searched from
+
 let mainData = {
 	"people":[
 		{
