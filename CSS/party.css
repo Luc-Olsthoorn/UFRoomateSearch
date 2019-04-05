@@ -69,6 +69,4 @@ p {
   border-radius: 50%;
   background: black;
 }
-.moved {
-  transform: translate(-320px); /* Equal to translateX(10px) */
-}
+

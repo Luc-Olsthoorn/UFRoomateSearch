@@ -23,3 +23,6 @@ a:focus {
     text-decoration: none;
     color: inherit;
 }
+.moved {
+  transform: translate(-320px); /* Equal to translateX(10px) */
+}
