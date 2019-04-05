@@ -22,7 +22,7 @@ const addToParty = (index) =>{
 		}
 	})
 	if (!alreadyThere){
-		party.push({index:index});
+		party.push(index);
 		generateParty();
 		storeData({party:party})
 	}

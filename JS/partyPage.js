@@ -5,7 +5,7 @@ const generateParty = () =>{
 
 		output += `
         <td class="party-member">
-                  <img class="party-pic" src="${mainData["people"][element.index].profilepic}">
+                  <img class="party-pic" src="${mainData["people"][element].profilepic}">
                 </td>`;
 	
     });

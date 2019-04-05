@@ -1,6 +1,9 @@
 const generateSearchResults = (callback)=>{
 	let output = mainData["people"].map((element, key)=>{
-
+		let addToPartyDisabled = "";
+		if (party.includes(key)){
+			addToPartyDisabled = "disabled"
+		}
 		let first = 		`          <div class="roommate-panel">
 				            <table class="roommate-table">
 				              <tr>
@@ -79,7 +82,7 @@ const generateSearchResults = (callback)=>{
 				                  </div>
 				                  <div style="font-weight: 500; font-size: 1em; margin-bottom: 0.25em; margin-top: -0.25em">MATCH</div>
 				                  <a class="waves-effect waves-light btn-small mybutton"><i class="material-icons left mybuttonicon">local_phone</i>REQ CONTACT</a>
-				                  <a class="waves-effect waves-light btn-small mybutton" onclick="addToParty(${key})"><i class="material-icons left mybuttonicon">group</i>INV TO PARTY</a>
+				                  <a class="waves-effect waves-light btn-small mybutton ${addToPartyDisabled}" onclick="addToParty(${key})"><i class="material-icons left mybuttonicon">group</i>INV TO PARTY</a>
 				                </div>
 				              </td>
 				              </tr>
@@ -88,6 +91,7 @@ const generateSearchResults = (callback)=>{
 
 			return first+second+third;
 	});
+	$("#searchResults").empty();
 	$("#searchResults").append(output);
 	callback();
 }
@@ -117,7 +121,7 @@ const generateParty = () =>{
 	let output = `<ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 20px;">
                   <li>Current Party</li> `;
     party.map((element, key)=>{
-		output += `<li> <img src="${mainData["people"][element.index].profilepic}" height="50" alt="" style="margin-left: 20px; border-radius: 50%;"> </li>`;
+		output += `<li> <img src="${mainData["people"][element].profilepic}" height="50" alt="" style="margin-left: 20px; border-radius: 50%;"> </li>`;
 	
     });
     for(let i =0; i< 5-party.length; i++){
@@ -126,6 +130,7 @@ const generateParty = () =>{
     output += ` </ul>`;
     $('#currentParty').empty();
     $('#currentParty').append(output);
+    generateSearchResults(updateHeights);
 }
 generateParty();
 generateSearchResults(updateHeights);
