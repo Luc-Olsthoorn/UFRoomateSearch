@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="CSS/styles.css">
         <link rel="stylesheet" type="text/css" href="CSS/party.css">
         <script src="JS/func.js"></script>
+        <script src="JS/dorm-drop.js"></script>
+
     </head>
 
     <body>
@@ -62,14 +64,28 @@
           <div class="panel dormSelection">
             <h1 class="panel-heading">Dorm Selection</h1>
             <div class="input-field col s12">
-              <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+              <select id="area-select" class="browser-default">
+                <option value="" disabled selected>Area</option>
+                <option value="beaty">Beaty Area</option>
+                <option value="broward">Broward Area</option>
+                <option value="graham">Graham Area</option>
+                <option value="hume">Hume Hall</option>
+                <option value="infinity">Infinity Hall</option>
+                <option value="jennings">Jennings Area</option>
+                <option value="keys">Keys Complex</option>
+                <option value="lakeside">Lakeside Complex</option>
+                <option value="murphree">Murphree Area</option>
+                <option value="springs">Springs Complex</option>
+                <option value="tolbert">Tolbert Area</option>
+                <option value="yulee">Yulee Area</option>
               </select>
-              <label>Materialize Select</label>
             </div>
+            <div class="input-field col s12">
+              <select id="building-select" class="browser-default" onchange="">
+                <option value="" disabled selected>Building</option>
+              </select>
+            </div>
+            <p id="demo">kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
 
           </div>
         </div>
