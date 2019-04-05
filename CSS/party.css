@@ -18,9 +18,10 @@ p {
   position: relative; /* necessary? */
   background-color: #f1f1f1;
   top: 68px;
-  height: 100%;
+  height: calc(100% - 80px);
   width: calc(100% - 319px);
   float: right;
+  min-height: 500px;
 }
 
 .myParty {
