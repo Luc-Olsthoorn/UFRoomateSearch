@@ -36,13 +36,15 @@
                   <img class="party-pic" src="IMG/users/George.png">
                 </td>
                 <!-- PARTY MEMBER 2 -->
-                <td class="party-member add-member" style="cursor: pointer;" onclick="javascript:document.location.href = 'Search.html';">
-                  <img class="party-pic" src="IMG/users/add.png">
-                </td>
+                <td class="party-member add-member" style="cursor: pointer;"
+                  onclick="javascript:document.location.href = 'Search.html';">
+                  <img class="party-pic" src="IMG/users/add.png"></td>
               </tr>
               <tr style="border-bottom: 0px;">
                 <td class="member-name"> Alec Welp </td>
-                <td class="member-name add-member" style="cursor: pointer;" onclick="javascript:document.location.href = 'Search.html';"><b>+</b> Add members </td>
+                <td class="member-name add-member" style="cursor: pointer;"
+                  onclick="javascript:document.location.href = 'Search.html';">
+                  <b>+</b> Add members </td>
               </tr>
               <!--
               <tr style="border-bottom: 0px;">
@@ -59,9 +61,16 @@
 
           <div class="panel dormSelection">
             <h1 class="panel-heading">Dorm Selection</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
-            pulvinar, at pulvinar felis blandit. HELLO WORLD!
-            Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+              <label>Materialize Select</label>
+            </div>
+
           </div>
         </div>
 
