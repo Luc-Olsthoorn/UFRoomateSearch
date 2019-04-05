@@ -2,8 +2,10 @@ function toggleMenu() {
     var bar = document.getElementById("sidebar");
     if (bar.style.display == 'block') {
         bar.style.display = 'none';
+        document.getElementById("body").classList.add("moved");
     } else {
         bar.style.display = 'block';
+        document.getElementById("body").classList.remove("moved");
     }
 }
 

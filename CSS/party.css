@@ -20,8 +20,10 @@ p {
   top: 68px;
   height: calc(100% - 160px);
   width: calc(100% - 319px);
-  float: right;
   min-height: 500px;
+    min-width: 1200px;
+    left: 320px;
+    z-index: -5;
 }
 
 .myParty {
@@ -66,4 +68,7 @@ p {
   height: 150pt;
   border-radius: 50%;
   background: black;
+}
+.moved {
+  transform: translate(-320px); /* Equal to translateX(10px) */
 }
