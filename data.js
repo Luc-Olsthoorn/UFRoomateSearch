@@ -24,12 +24,18 @@ const addToParty = (index) =>{
 	if (!alreadyThere){
 		party.push({index:index});
 		generateParty();
+		storeData({party:party})
 	}
 
 }
-let party = [];
+
 const getStoredData = () =>{
-	return JSON.parse(sessionStorage.data);
+	if(sessionStorage.data){
+		return JSON.parse(sessionStorage.data);
+	}else{
+		return {};
+	}
+	
 }
 const storeData = (data) =>{
 	sessionStorage.setItem('data', JSON.stringify(data));
@@ -221,5 +227,6 @@ var checkorx = function(input, index) {
 	return result;
 
 };
+let party = getStoredData().party || [];
 generateParty();
 generateSearchResults(updateHeights);
