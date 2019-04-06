@@ -62,523 +62,847 @@ const buildings ={
 let roomNumbers ={
   beaty:[
     {
-      "available": 40,
+      "available": 20,
+      "size": 4,
+      "floor": 1,
+      "type": "Apartment"
+    },
+    {
+      "available": 15,
+      "size": 4,
+      "floor": 2,
+      "type": "Apartment"
+    },
+    {
+      "available": 12,
       "size": 4,
       "floor": 3,
       "type": "Apartment"
     },
     {
-      "available": 40,
-      "size": 1,
-      "floor": 3,
-      "type": "Traditional"
+      "available": 23,
+      "size": 4,
+      "floor": 4,
+      "type": "Apartment"
     },
     {
-      "available": 28,
-      "size": 5,
-      "floor": 0,
-      "type": "Suite"
+      "available": 19,
+      "size": 4,
+      "floor": 5,
+      "type": "Apartment"
+    },
+    {
+      "available": 21,
+      "size": 4,
+      "floor": 6,
+      "type": "Apartment"
+    },
+    {
+      "available": 23,
+      "size": 4,
+      "floor": 7,
+      "type": "Apartment"
     }
   ],
   broward:[
     {
-      "available": 26,
-      "size": 1,
-      "floor": 3,
-      "type": "Apartment"
-    },
-    {
-      "available": 34,
-      "size": 5,
-      "floor": 4,
-      "type": "Traditional"
-    },
-    {
-      "available": 36,
-      "size": 3,
-      "floor": 5,
-      "type": "Suite"
-    }
-  ],
-  rawlings:[
-    {
-      "available": 37,
-      "size": 3,
-      "floor": 0,
-      "type": "Apartment"
-    },
-    {
-      "available": 30,
-      "size": 3,
+      "available": 1,
+      "size": "Single",
       "floor": 2,
       "type": "Traditional"
     },
     {
+      "available": 20,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
       "available": 22,
-      "size": 2,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 14,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 12,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    },
+    {
+      "available": 18,
+      "size": "Double",
+      "floor": 5,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 4,
+      "type": "Traditional"
+    },
+  ],
+  rawlings:[
+    {
+      "available": 9,
+      "size": "Double",
+      "floor": 1,
+      "type": "Apartment"
+    },
+    {
+      "available": 8,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 3,
+      "size": "Double Suite",
       "floor": 4,
       "type": "Suite"
     }
   ],
   graham:[
     {
-      "available": 33,
-      "size": 1,
-      "floor": 0,
-      "type": "Apartment"
-    },
-    {
-      "available": 21,
-      "size": 3,
-      "floor": 7,
+      "available": 10,
+      "size": "Double",
+      "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 23,
-      "size": 1,
+      "available": 19,
+      "size": "Double",
       "floor": 2,
-      "type": "Suite"
+      "type": "Traditional"
+    },
+    {
+      "available": 20,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 13,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
     }
   ],
   simpson:[
     {
-      "available": 33,
-      "size": 1,
-      "floor": 0,
-      "type": "Apartment"
-    },
-    {
-      "available": 21,
-      "size": 3,
-      "floor": 7,
+      "available": 15,
+      "size": "Double",
+      "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 23,
-      "size": 1,
-      "floor": 2,
-      "type": "Suite"
-    }
-  ],
-  trusler:[
-    {
-      "available": 26,
-      "size": 2,
-      "floor": 4,
-      "type": "Apartment"
-    },
-    {
       "available": 38,
-      "size": 3,
-      "floor": 5,
+      "size": "Double",
+      "floor": 2,
       "type": "Traditional"
     },
     {
       "available": 24,
-      "size": 5,
-      "floor": 5,
-      "type": "Suite"
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 10,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    }
+  ],
+  trusler:[
+    {
+      "available": 15,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 18,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 9,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 11,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
     }
   ],
   hume:[
     {
-      "available": 29,
-      "size": 3,
+      "available": 40,
+      "size": "Double",
       "floor": 1,
-      "type": "Apartment"
+      "type": "Suite"
     },
     {
-      "available": 34,
-      "size": 2,
-      "floor": 6,
-      "type": "Traditional"
+      "available": 20,
+      "size": "Double",
+      "floor": 2,
+      "type": "Suite"
+    },
+    {
+      "available": 23,
+      "size": "Double",
+      "floor": 3,
+      "type": "Suite"
     },
     {
       "available": 35,
-      "size": 1,
-      "floor": 5,
+      "size": "Double",
+      "floor": 4,
+      "type": "Suite"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 1,
+      "type": "Suite"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 4,
       "type": "Suite"
     }
   ],
   infinity:[
     {
-      "available": 40,
-      "size": 2,
+      "available": 3,
+      "size": "Single",
       "floor": 1,
-      "type": "Apartment"
-    },
-    {
-      "available": 28,
-      "size": 5,
-      "floor": 2,
-      "type": "Traditional"
-    },
-    {
-      "available": 30,
-      "size": 2,
-      "floor": 5,
       "type": "Suite"
+    },
+    {
+      "available": 1,
+      "size": "Single",
+      "floor": 4,
+      "type": "Suite"
+    },
+    {
+      "available": 15,
+      "size": "Double",
+      "floor": 1,
+      "type": "Suite"
+    },
+    {
+      "available": 12,
+      "size": "Double",
+      "floor": 3,
+      "type": "Suite"
+    },
+    {
+      "available": 10,
+      "size": "Double",
+      "floor": 4,
+      "type": "Suite"
+    },
+    {
+      "available": 4,
+      "size": "Double",
+      "floor": 2,
+      "type": "Super Suite"
+    },
+    {
+      "available": 1,
+      "size": "Double",
+      "floor": 3,
+      "type": "Super Suite"
+    },
+    {
+      "available": 2,
+      "size": "Double",
+      "floor": 4,
+      "type": "Super Suite"
     }
   ],
   jennings:[
     {
-      "available": 20,
-      "size": 2,
-      "floor": 2,
-      "type": "Apartment"
+      "available": 10,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
     },
     {
-      "available": 38,
-      "size": 2,
+      "available": 13,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 7,
+      "size": "Double",
       "floor": 3,
       "type": "Traditional"
     },
     {
-      "available": 40,
-      "size": 3,
-      "floor": 1,
-      "type": "Suite"
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 3,
+      "type": "Traditional"
     }
   ],
   keys:[
     {
-      "available": 31,
-      "size": 2,
-      "floor": 6,
+      "available": 15,
+      "size": "Four Bedroom",
+      "floor": 1,
       "type": "Apartment"
     },
     {
-      "available": 22,
-      "size": 5,
-      "floor": 1,
-      "type": "Traditional"
-    },
-    {
-      "available": 24,
-      "size": 4,
-      "floor": 1,
-      "type": "Suite"
+      "available": 15,
+      "size": "Four Bedroom",
+      "floor": 2,
+      "type": "Apartment"
     }
   ],
   lakeside:[
     {
       "available": 21,
-      "size": 2,
-      "floor": 5,
+      "size": "Single",
+      "floor": 1,
       "type": "Apartment"
     },
     {
-      "available": 26,
-      "size": 3,
-      "floor": 6,
-      "type": "Traditional"
+      "available": 50,
+      "size": "Single",
+      "floor": 2,
+      "type": "Apartment"
     },
     {
       "available": 33,
-      "size": 1,
-      "floor": 0,
-      "type": "Suite"
+      "size": "Single",
+      "floor": 3,
+      "type": "Apartment"
     }
   ],
   buckman:[
     {
-      "available": 39,
-      "size": 4,
-      "floor": 2,
-      "type": "Apartment"
+      "available": 4,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
     },
     {
-      "available": 25,
-      "size": 3,
+      "available": 1,
+      "size": "Single",
       "floor": 2,
       "type": "Traditional"
     },
     {
-      "available": 39,
-      "size": 5,
-      "floor": 6,
-      "type": "Suite"
+      "available": 2,
+      "size": "Single",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 10,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 12,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 14,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 3,
+      "size": "Triple",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 3,
+      "type": "Traditional"
     }
   ],
   fletcher:[
     {
-      "available": 34,
-      "size": 4,
+      "available": 1,
+      "size": "Single",
       "floor": 1,
-      "type": "Apartment"
-    },
-    {
-      "available": 24,
-      "size": 3,
-      "floor": 6,
       "type": "Traditional"
     },
     {
-      "available": 30,
-      "size": 3,
+      "available": 5,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 10,
+      "size": "Double",
       "floor": 3,
-      "type": "Suite"
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Two Room Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 3,
+      "type": "Traditional"
     }
   ],
   murphree:[
     {
-      "available": 36,
-      "size": 4,
-      "floor": 0,
-      "type": "Apartment"
-    },
-    {
-      "available": 23,
-      "size": 1,
-      "floor": 7,
+      "available": 6,
+      "size": "Double",
+      "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 37,
-      "size": 3,
-      "floor": 1,
-      "type": "Suite"
+      "available": 6,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 7,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 4,
+      "type": "Traditional"
     }
   ],
   sledd:[
     {
-      "available": 33,
-      "size": 3,
-      "floor": 5,
-      "type": "Apartment"
-    },
-    {
-      "available": 28,
-      "size": 3,
+      "available": 5,
+      "size": "Double",
       "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 40,
-      "size": 3,
+      "available": 5,
+      "size": "Double",
       "floor": 3,
-      "type": "Suite"
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Two Room Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Three Room Quad",
+      "floor": 2,
+      "type": "Traditional"
     }
   ],
   thomas:[
     {
-      "available": 24,
-      "size": 3,
-      "floor": 5,
-      "type": "Apartment"
-    },
-    {
-      "available": 37,
-      "size": 3,
-      "floor": 6,
+      "available": 5,
+      "size": "Double",
+      "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 38,
-      "size": 4,
-      "floor": 1,
-      "type": "Suite"
+      "available": 3,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 5,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Quad",
+      "floor": 3,
+      "type": "Traditional"
     }
   ],
   springs:[
     {
-      "available": 21,
-      "size": 5,
-      "floor": 5,
-      "type": "Apartment"
+      "available": 2,
+      "size": "Single",
+      "floor": 1,
+      "type": "Suite"
     },
     {
-      "available": 40,
-      "size": 1,
-      "floor": 6,
-      "type": "Traditional"
+      "available": 5,
+      "size": "Single",
+      "floor": 3,
+      "type": "Suite"
     },
     {
-      "available": 37,
-      "size": 1,
-      "floor": 5,
+      "available": 12,
+      "size": "Double",
+      "floor": 2,
+      "type": "Suite"
+    },
+    {
+      "available": 9,
+      "size": "Double",
+      "floor": 3,
+      "type": "Suite"
+    },
+    {
+      "available": 7,
+      "size": "Double",
+      "floor": 4,
       "type": "Suite"
     }
   ],
   east:[
     {
-      "available": 38,
-      "size": 5,
-      "floor": 6,
-      "type": "Apartment"
-    },
-    {
-      "available": 28,
-      "size": 4,
-      "floor": 7,
-      "type": "Traditional"
-    },
-    {
-      "available": 28,
-      "size": 1,
-      "floor": 7,
-      "type": "Suite"
-    }
-  ],
-  north:[
-    {
-      "available": 38,
-      "size": 5,
-      "floor": 6,
-      "type": "Apartment"
-    },
-    {
-      "available": 28,
-      "size": 4,
-      "floor": 7,
-      "type": "Traditional"
-    },
-    {
-      "available": 28,
-      "size": 1,
-      "floor": 7,
-      "type": "Suite"
-    }
-  ],
-  riker:[
-    {
-      "available": 38,
-      "size": 1,
-      "floor": 4,
-      "type": "Apartment"
-    },
-    {
-      "available": 39,
-      "size": 1,
-      "floor": 0,
-      "type": "Traditional"
-    },
-    {
-      "available": 38,
-      "size": 1,
-      "floor": 2,
-      "type": "Suite"
-    }
-  ],
-  tolbert:[
-    {
-      "available": 31,
-      "size": 5,
-      "floor": 6,
-      "type": "Apartment"
-    },
-    {
-      "available": 11,
-      "size": 1,
-      "floor": 7,
-      "type": "Traditional"
-    },
-    {
-      "available": 40,
-      "size": 1,
-      "floor": 0,
-      "type": "Suite"
-    }
-  ],
-  weaver:[
-    {
-      "available": 7,
-      "size": 5,
+      "available": 10,
+      "size": "Double",
       "floor": 1,
-      "type": "Apartment"
+      "type": "Traditional"
     },
     {
-      "available": 1,
-      "size": 1,
+      "available": 15,
+      "size": "Double",
       "floor": 4,
       "type": "Traditional"
     },
     {
-      "available": 13,
-      "size": 1,
-      "floor": 0,
-      "type": "Suite"
-    }
-  ],
-  cypress:
-  [
-    {
-      "available": 34,
-      "size": 2,
-      "floor": 7,
-      "type": "Apartment"
-    },
-    {
-      "available": 9,
-      "size": 3,
+      "available": 6,
+      "size": "Double",
       "floor": 5,
       "type": "Traditional"
     },
     {
-      "available": 4,
-      "size": 4,
+      "available": 3,
+      "size": "Triple",
       "floor": 1,
-      "type": "Suite"
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
     }
   ],
-  mallory:[
+  north:[
+    {
+      "available": 1,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 6,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
     {
       "available": 8,
-      "size": 5,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 8,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
       "floor": 3,
-      "type": "Apartment"
+      "type": "Traditional"
+    }
+  ],
+  riker:[
+    {
+      "available": 1,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
     },
     {
       "available": 10,
-      "size": 3,
-      "floor": 7,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 12,
+      "size": "Double",
+      "floor": 2,
       "type": "Traditional"
     },
     {
       "available": 5,
-      "size": 5,
-      "floor": 0,
-      "type": "Suite"
-    }
-  ],
-  reid:[
-    {
-      "available": 17,
-      "size": 5,
-      "floor": 7,
-      "type": "Apartment"
-    },
-    {
-      "available": 15,
-      "size": 5,
+      "size": "Double",
       "floor": 3,
       "type": "Traditional"
-    },
-    {
-      "available": 38,
-      "size": 3,
-      "floor": 3,
-      "type": "Suite"
     }
   ],
-  yulee:[
+  tolbert:[
     {
-      "available": 9,
-      "size": 3,
-      "floor": 7,
-      "type": "Apartment"
-    },
-    {
-      "available": 21,
-      "size": 2,
+      "available": 1,
+      "size": "Single",
       "floor": 1,
       "type": "Traditional"
     },
     {
-      "available": 14,
-      "size": 1,
-      "floor": 0,
+      "available": 11,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 8,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 4,
+      "type": "Traditional"
+    }
+  ],
+  weaver:[
+    {
+      "available": 1,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 5,
+      "size": "Double",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 4,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 4,
+      "type": "Traditional"
+    },
+  ],
+  cypress:
+  [
+    {
+      "available": 5,
+      "size": "Single",
+      "floor": 1,
       "type": "Suite"
+    },
+    {
+      "available": 8,
+      "size": "Single",
+      "floor": 2,
+      "type": "Suite"
+    },
+    {
+      "available": 3,
+      "size": 4,
+      "floor": 1,
+      "type": "Suite"
+    },
+    {
+      "available": 20,
+      "size": "Double",
+      "floor": 1,
+      "type": "Suite"
+    },
+    {
+      "available": 16,
+      "size": "Double",
+      "floor": 2,
+      "type": "Suite"
+    },
+    {
+      "available": 13,
+      "size": "Double",
+      "floor": 3,
+      "type": "Suite"
+    },
+    {
+      "available": 2,
+      "size": "Double",
+      "floor": 2,
+      "type": "Super Suite"
+    },
+    {
+      "available": 1,
+      "size": "Double",
+      "floor": 3,
+      "type": "Super Suite"
+    },
+  ],
+  mallory:[
+    {
+      "available": 2,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Triple",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 6,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 5,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 5,
+      "size": "Double",
+      "floor": 4,
+      "type": "Traditional"
+    }
+  ],
+  reid:[
+    {
+      "available": 3,
+      "size": "Single",
+      "floor": 1,
+      "type": "Traditional"
+    },
+    {
+      "available": 1,
+      "size": "Single",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 7,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 6,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 5,
+      "type": "Traditional"
+    }
+  ],
+  yulee:[
+    {
+      "available": 12,
+      "size": "Double",
+      "floor": 2,
+      "type": "Traditional"
+    },
+    {
+      "available": 18,
+      "size": "Double",
+      "floor": 3,
+      "type": "Traditional"
+    },
+    {
+      "available": 2,
+      "size": "Triple",
+      "floor": 4,
+      "type": "Traditional"
     }
 ]
 }
