@@ -71,20 +71,20 @@
 			<a class="waves-effect waves-light btn light-blue darken-4" onclick="newIndex(0)">Begin</a>
 			</div>
 		  <div id="BasicInformation" style="display: none;">
-
-		  	<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:300px"> <!-- notice the "circle" class -->
+				<img src="IMG/users/George.png" alt="" class="circle responsive-img" style="width:300px">
+		  	<!--<img src="kentfuchs.jpg" alt="" class="circle responsive-img" style="width:300px"> <!-- notice the "circle" class -->
 		  	<div class="row">
 			    <form class="col s12" style="margin-left: 24%;">
-			      <div class="row">
+			      <div class="row" style="margin:0px">
 			        <div class="input-field col s6">
-			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-			          <label for="first_name">Phone</label>
+			          <input placeholder="Phone" id="first_name" type="text" class="validate">
+			          <!--<label for="first_name">Phone</label>-->
 			        </div>
 			      </div>
-			      <div class="row">
+			      <div class="row" style="margin:0px">
 			        <div class="input-field col s6">
-			          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-			          <label for="first_name">Email</label>
+			          <input placeholder="Email" id="first_name" type="text" class="validate">
+			          <!--<label for="first_name">Email</label>-->
 			        </div>
 			      </div>
 			     </form>
@@ -212,13 +212,13 @@
 			  	<form action="#">
 			  	    <p>
 			  	      <label>
-			  	        <input name="group1" type="radio" checked />
+			  	        <input class="with-gap" name="group1" type="radio" checked />
 			  	        <span>Text</span>
 			  	      </label>
 			  	    </p>
 			  	    <p>
 			  	      <label>
-			  	        <input name="group1" type="radio" />
+			  	        <input class="with-gap" name="group1" type="radio" />
 			  	        <span>Email</span>
 			  	      </label>
 			  	    </p>
@@ -256,7 +256,7 @@
 	const storeData = () =>{
 		sessionStorage.setItem('personal', {datastored:"YEET"});
 		javascript:document.location.href = './Party.html';
-		
+
 	}
 	const newIndex = (inputIndex)=>{
 		$('#'+ "Welcome").css("display","none");
