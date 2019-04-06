@@ -120,11 +120,12 @@ var checkorx = function(input, index) {
 const generateParty = () =>{
 	let output = `<ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 20px;">
                   <li>Current Party</li> `;
+    output += `<li> <img src="${me.profilepic}" height="50" alt="" style="margin-left: 20px; border-radius: 50%;"> </li>`;
     party.map((element, key)=>{
 		output += `<li> <img src="${mainData["people"][element].profilepic}" height="50" alt="" style="margin-left: 20px; border-radius: 50%;"> </li>`;
 	
     });
-    for(let i =0; i< 5-party.length; i++){
+    for(let i =0; i< 3-party.length; i++){
     	output+=`<li><span class="dashed-circle"></span></li>`;
     }
     output += ` </ul>`;

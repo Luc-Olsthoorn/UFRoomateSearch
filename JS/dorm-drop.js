@@ -926,6 +926,7 @@ const onAreaChange = (val) =>{
     $('#building').append(output);
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, []);
+    onBuildingChange(buildings[val][0].val);
   }else{
     //just empty it
     $('#building').empty();
