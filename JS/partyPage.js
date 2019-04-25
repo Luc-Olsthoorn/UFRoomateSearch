@@ -12,11 +12,13 @@ const generateParty = () =>{
                   <img class="party-pic" src="${mainData["people"][element].profilepic}">
                   <p> ${mainData["people"][element].name}</p>
                 </td>`;
-	
+
     });
-    output += `<td class="member-name add-member" style="cursor: pointer;"
+    output += `<td class="add-member party-member" style="cursor: pointer;"
                   onclick="javascript:document.location.href = 'Search.html';">
-                  <b>+</b> Add members </td>`;
+                  <img class="party-pic" src="IMG/users/add.png">
+                  <p><b>+</b> Add members</p>
+                </td>`;
     $('#currentParty').empty();
     $('#currentParty').append(output);
 }
