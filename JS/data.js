@@ -93,6 +93,132 @@ let mainData = {
 			profilepic: "IMG/users/Mark.png",
 			match: 79,
 			party: []
+		},
+
+		{
+			name: "John Smith",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/boy1.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Dylan Dinklage",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/boy2.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Drew Woods",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/boy3.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Anne Anderson",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl1.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Bridgett Barnes",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl2.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Caroline Cooper",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl3.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Daniella Dankerson",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl4.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Erin Engelbert",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl5.jpg",
+			match: 79,
+			party: []
+		},
+
+		{
+			name: "Gianna the Great Jr",
+			title: "Incoming Freshman",
+			major: "Computer Science",
+			hometown: "White Plains, NY",
+			hobbies: ["Programming", "Video Games", "Rowing"],
+			bed: "Goes to bed between 12 - 1 AM",
+			partylevel: "Doesn't like to party",
+			work: "Serious about school and getting work done",
+			profilepic: "IMG/users/girl6.jpg",
+			match: 79,
+			party: []
 		}
 
 
@@ -103,4 +229,3 @@ let mainData = {
 
 
 let party = getStoredData().party || [];
-
