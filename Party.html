@@ -54,7 +54,15 @@
 
             </table>
           </div>
-
+          <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4></h4>
+                <p>All party members have been notified. Currently waiting for confirmation.</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+              </div>
+            </div>
           <!-- Area dropdown -->
           <div class="panel dormSelection">
             <h1 class="panel-heading">Dorm Selection</h1>
@@ -113,9 +121,10 @@
             </div>
 
             <div class="submit">
-              <button class="btn waves-effect waves-light light-blue darken-4" type="submit" name="action"
+              <button data-target="modal1" class="modal-trigger btn waves-effect waves-light light-blue darken-4" type="submit" name="action"
               style="position: absolute; right: 75px; bottom: 0;">Lock - in
               </button>
+            
             </div>
 
           </div>

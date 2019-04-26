@@ -23,3 +23,4 @@ const generateParty = () =>{
     $('#currentParty').append(output);
 }
 generateParty();
+

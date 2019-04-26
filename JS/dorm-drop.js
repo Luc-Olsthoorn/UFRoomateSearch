@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('select');
     var instances = M.FormSelect.init(elems, []);
+    var elems2 = document.querySelectorAll('.modal');
+    var instances2 = M.Modal.init(elems2, []);
 });
 
 const buildings ={
