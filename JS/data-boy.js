@@ -97,10 +97,10 @@ let mainData = {
 
 		{
 			name: "John Smith",
-			title: "Incoming Sophomore",
-			major: "Health Sciences",
+			title: "Incoming Freshman",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
-			hobbies: ["Dissecting", "Fishing", "Rowing"],
+			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
 			partylevel: "Doesn't like to party",
 			work: "Serious about school and getting work done",
@@ -111,10 +111,10 @@ let mainData = {
 
 		{
 			name: "Dylan Dinklage",
-			title: "Returning Junior",
-			major: "Theater",
+			title: "Incoming Freshman",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
-			hobbies: ["Eating", "Video Games", "Rowing"],
+			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
 			partylevel: "Doesn't like to party",
 			work: "Serious about school and getting work done",
@@ -126,117 +126,13 @@ let mainData = {
 		{
 			name: "Drew Woods",
 			title: "Incoming Freshman",
-			major: "Biology",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/boy3.jpg",
-			match: 64,
-			party: []
-		},
-		{
-			name: "Anne Anderson",
-			title: "Incoming Freshman",
 			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
 			partylevel: "Doesn't like to party",
 			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl1.jpg",
-			match: 94,
-			party: [ {
-									profilepic: "IMG/users/girl3.jpg",
-									match: 82
-							 },
-							 {
- 									profilepic: "IMG/users/girl5.jpg",
- 									match: 73
-				 			} ]
-		},
-
-		{
-			name: "Bridgett Barnes",
-			title: "Returning Sophomore",
-			major: "Phyiscs",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl2.jpg",
-			match: 87,
-			party: []
-		},
-
-		{
-			name: "Caroline Cooper",
-			title: "Incoming Freshman",
-			major: "Biology",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl3.jpg",
-			match: 82,
-			party: [ {
-									profilepic: "IMG/users/girl1.jpg",
-									match: 94
-							 },
-							 {
- 									profilepic: "IMG/users/girl5.jpg",
- 									match: 73
-				 			} ]
-		},
-
-		{
-			name: "Daniella Dankerson",
-			title: "Returning Junior",
-			major: "Dank Memes",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl4.jpg",
-			match: 76,
-			party: []
-		},
-
-		{
-			name: "Erin Engelbert",
-			title: "Incoming Freshman",
-			major: "Sociology",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl5.jpg",
-			match: 73,
-			party: [ {
-									profilepic: "IMG/users/girl1.jpg",
-									match: 94
-							 },
-							 {
- 									profilepic: "IMG/users/girl3.jpg",
- 									match: 73
-				 			} ]
-		},
-
-		{
-			name: "Gianna the Great Jr",
-			title: "Incoming Freshman",
-			major: "History",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/girl6.jpg",
+			profilepic: "IMG/users/boy3.jpg",
 			match: 64,
 			party: []
 		}

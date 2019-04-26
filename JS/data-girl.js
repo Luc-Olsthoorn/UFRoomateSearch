@@ -45,98 +45,7 @@ const storeData = (data) =>{
 
 let mainData = {
 	"people":[
-		{
-			name: "Andrew Kuczynski",
-			title: "Incoming Freshman",
-			major: "Computer Engineering",
-			hometown: "Coral Springs, FL",
-			hobbies: ["Hockey", "Video Games"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Likes to party occasionally",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/Andrew.png",
-			match: 93,
-			party: [ {
-									profilepic: "IMG/users/Kent.png",
-									match: 88
-							 },
-							 {
- 									profilepic: "IMG/users/Albert.png",
- 									match: 88
-				 			} ]
-
-		},
-
-		{
-			name: "Dave Small",
-			title: "Incoming Freshman",
-			major: "Computer Science",
-			hometown: "Orlando, FL",
-			hobbies: ["Programming", "Video Games", "Travelling"],
-			bed: "Goes to bed between 8 - 10 PM",
-			partylevel: "Likes to party occasionally",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/Dave.png",
-			match: 87,
-			party: []
-		},
-
-		{
-			name: "Mark Zuckerberg",
-			title: "Incoming Freshman",
-			major: "Computer Science",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/Mark.png",
-			match: 79,
-			party: []
-		},
-
-		{
-			name: "John Smith",
-			title: "Incoming Sophomore",
-			major: "Health Sciences",
-			hometown: "White Plains, NY",
-			hobbies: ["Dissecting", "Fishing", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/boy1.jpg",
-			match: 75,
-			party: []
-		},
-
-		{
-			name: "Dylan Dinklage",
-			title: "Returning Junior",
-			major: "Theater",
-			hometown: "White Plains, NY",
-			hobbies: ["Eating", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/boy2.jpg",
-			match: 69,
-			party: []
-		},
-
-		{
-			name: "Drew Woods",
-			title: "Incoming Freshman",
-			major: "Biology",
-			hometown: "White Plains, NY",
-			hobbies: ["Programming", "Video Games", "Rowing"],
-			bed: "Goes to bed between 12 - 1 AM",
-			partylevel: "Doesn't like to party",
-			work: "Serious about school and getting work done",
-			profilepic: "IMG/users/boy3.jpg",
-			match: 64,
-			party: []
-		},
-		{
+        {
 			name: "Anne Anderson",
 			title: "Incoming Freshman",
 			major: "Computer Science",
@@ -159,8 +68,8 @@ let mainData = {
 
 		{
 			name: "Bridgett Barnes",
-			title: "Returning Sophomore",
-			major: "Phyiscs",
+			title: "Incoming Freshman",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
@@ -174,7 +83,7 @@ let mainData = {
 		{
 			name: "Caroline Cooper",
 			title: "Incoming Freshman",
-			major: "Biology",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
@@ -194,8 +103,8 @@ let mainData = {
 
 		{
 			name: "Daniella Dankerson",
-			title: "Returning Junior",
-			major: "Dank Memes",
+			title: "Incoming Freshman",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
@@ -209,7 +118,7 @@ let mainData = {
 		{
 			name: "Erin Engelbert",
 			title: "Incoming Freshman",
-			major: "Sociology",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
@@ -230,7 +139,7 @@ let mainData = {
 		{
 			name: "Gianna the Great Jr",
 			title: "Incoming Freshman",
-			major: "History",
+			major: "Computer Science",
 			hometown: "White Plains, NY",
 			hobbies: ["Programming", "Video Games", "Rowing"],
 			bed: "Goes to bed between 12 - 1 AM",
@@ -240,6 +149,8 @@ let mainData = {
 			match: 64,
 			party: []
 		}
+
+
 
 	]
 
